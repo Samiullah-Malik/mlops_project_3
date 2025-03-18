@@ -1,7 +1,6 @@
 name: ml_fastapi
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - python=3.8
   - numpy
@@ -12,3 +11,4 @@ dependencies:
   - fastapi=0.63.0
   - uvicorn
   - gunicorn
+  - joblib
