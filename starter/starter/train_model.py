@@ -51,3 +51,72 @@ def save_model(model, encoder, lb, model_path):
 
 save_model(model, encoder, lb, '../model')
 logger.info('Save the model')
+
+# Run Model inference
+y_preds = inference(model, X_test)
+
+# Compute model performance metrics
+def compute_model_metrics_per_slice(df, feature, y_true, y_preds, output_file):
+    """
+    Computes model performance metrics (precision, recall, F1-score) for each unique value of a given categorical feature.
+
+    Inputs
+    ------
+    df : pd.DataFrame
+        The dataset containing the categorical features.
+    feature : str
+        The categorical feature to compute performance slices for.
+    y_true : np.array
+        Known labels, binarized.
+    y_pred : np.array
+        Predicted labels, binarized.
+
+    Returns
+    -------
+    None (Prints performance metrics per slice)
+    """
+    logger.info(type(df))
+    unique_values = df[feature].unique()  # Get all unique values of the feature
+    
+
+    with open(output_file, 'a') as f:
+        f.write(f"\nPerformance metrics for feature: {feature}\n" + "-" * 50)
+        f.write("\n")
+
+        for value in unique_values:
+            # Filter rows where the feature has a specific value
+            mask = df[feature] == value
+            y_true_slice = y_true[mask]
+            y_pred_slice = y_preds[mask]
+
+            # Ensure we have data points for this slice
+            if len(y_true_slice) == 0:
+                continue
+
+            # Compute metrics
+            precision, recall, fbeta = compute_model_metrics(y_true, y_preds)
+
+            # Print results
+            print(f"Feature Value: {value}")
+            print(f"  Precision: {precision:.4f}")
+            print(f"  Recall:    {recall:.4f}")
+            print(f"  F1-score:  {fbeta:.4f}")
+            print("-" * 50)
+
+
+            f.write(f"Feature Value: {value}\n")
+            f.write(f"  Precision: {precision:.4f}\n")
+            f.write(f"  Recall:    {recall:.4f}\n")
+            f.write(f"  F1-score:  {fbeta:.4f}\n")
+            f.write("-" * 50)
+            f.write("\n")
+
+        f.write("\n")
+
+
+
+logger.info("Computing Model Performance On Slices of Data")
+# with open('slice_output.txt', 'w'):
+for feature in cat_features:
+    compute_model_metrics_per_slice(test, feature, y_test, y_preds, 'slice_output.txt')
+    
