@@ -75,12 +75,10 @@ def compute_model_metrics_per_slice(df, feature, y_true, y_preds, output_file):
     -------
     None (Prints performance metrics per slice)
     """
-    logger.info(type(df))
     unique_values = df[feature].unique()  # Get all unique values of the feature
     
 
     with open(output_file, 'a') as f:
-        f.write(f"\nPerformance metrics for feature: {feature}\n" + "-" * 50)
         f.write("\n")
 
         for value in unique_values:
@@ -96,14 +94,6 @@ def compute_model_metrics_per_slice(df, feature, y_true, y_preds, output_file):
             # Compute metrics
             precision, recall, fbeta = compute_model_metrics(y_true, y_preds)
 
-            # Print results
-            print(f"Feature Value: {value}")
-            print(f"  Precision: {precision:.4f}")
-            print(f"  Recall:    {recall:.4f}")
-            print(f"  F1-score:  {fbeta:.4f}")
-            print("-" * 50)
-
-
             f.write(f"Feature Value: {value}\n")
             f.write(f"  Precision: {precision:.4f}\n")
             f.write(f"  Recall:    {recall:.4f}\n")
@@ -116,7 +106,6 @@ def compute_model_metrics_per_slice(df, feature, y_true, y_preds, output_file):
 
 
 logger.info("Computing Model Performance On Slices of Data")
-# with open('slice_output.txt', 'w'):
 for feature in cat_features:
     compute_model_metrics_per_slice(test, feature, y_test, y_preds, 'slice_output.txt')
     
