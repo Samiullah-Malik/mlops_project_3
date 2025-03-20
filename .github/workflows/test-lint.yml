@@ -21,7 +21,7 @@ jobs:
           python-version: 3.8
           auto-update-conda: true
           activate-environment: ml_fastapi
-          environment-file: starter/environment.yml
+          environment-file: environment.yml
 
       # Step 3: Verify Conda Environment
       - name: Verify Conda Environment
