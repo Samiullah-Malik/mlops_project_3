@@ -21,7 +21,7 @@ jobs:
           python-version: 3.8
           auto-update-conda: true
           activate-environment: ml_fastapi
-          environment-file: starter/environment.yml
+          environment-file: environment.yml
 
       # Step 3: Verify Conda Environment
       - name: Verify Conda Environment
@@ -36,10 +36,6 @@ jobs:
       # Step 5: Run Linter (flake8)
       - name: Run Linter (flake8)
         run: conda run -n ml_fastapi flake8 . --max-line-length=127 --statistics
-
-      # Step 3: Check PYTHONPATH
-      - name: Check PYTHONPATH
-        run: echo $PYTHONPATH
 
       # Step 6: Run Tests (pytest)
       - name: Run Tests (pytest)
