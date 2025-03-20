@@ -5,7 +5,7 @@ import numpy as np
 from fastapi import FastAPI
 from pydantic import BaseModel, Field
 
-from starter.starter.ml.model import inference
+from starter.ml.model import inference
 
 # Initialize FastAPI app
 app = FastAPI()
@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)-15s %(message)s")
 logger = logging.getLogger()
 
 # Set Model Path
-MODEL_PATH = './starter/model'
+MODEL_PATH = './model'
 
 
 def load_model(model_path):
@@ -39,7 +39,6 @@ def load_model(model_path):
         lb = joblib.load(f"{model_path}/label_binarizer.pkl")
 
         logger.info('Model, encoder, and label binarizer loaded successfully.')
-        # logger.info(f'Encoder Categories: {encoder.categories_}')
 
     except Exception as e:
         logger.error(f"Error loading model: {e}")
