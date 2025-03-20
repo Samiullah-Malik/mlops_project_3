@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)-15s %(message)s")
 logger = logging.getLogger()
 
 # Set Model Path
-MODEL_PATH = './model'
+MODEL_PATH = './starter/model'
 
 
 def load_model(model_path):
