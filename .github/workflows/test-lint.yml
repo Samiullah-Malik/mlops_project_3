@@ -14,33 +14,26 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # Step 2: Install Miniconda
-      - name: Set up Miniconda
-        uses: conda-incubator/setup-miniconda@v2
+      # Step 2: Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          python-version: 3.8
-          auto-update-conda: true
-          activate-environment: ml_fastapi
-          environment-file: environment.yml
+          python-version: '3.9'
 
-      # Step 3: Verify Conda Environment
-      - name: Verify Conda Environment
-        run: conda info --envs
-
-      # Step 4: Install Additional Dependencies (if needed)
+      # Step 3: Install Dependencies
       - name: Install Dependencies
         run: |
-          conda run -n ml_fastapi python -m pip install --upgrade pip
-          conda run -n ml_fastapi pip install flake8
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-      # Step 5: Run Linter (flake8)
+      # Step 4: Run Linter (flake8)
       - name: Run Linter (flake8)
         env:
           PYTHONPATH: "${{ github.workspace }}"  # Set PYTHONPATH to the project root
-        run: conda run -n ml_fastapi flake8 . --max-line-length=127 --statistics
+        run: flake8 . --max-line-length=127 --statistics
 
-      # Step 6: Run Tests (pytest)
+      # Step 5: Run Tests (pytest)
       - name: Run Tests (pytest)
         env:
           PYTHONPATH: "${{ github.workspace }}"  # Set PYTHONPATH to the project root
-        run: conda run -n ml_fastapi pytest -v
+        run: pytest -v
