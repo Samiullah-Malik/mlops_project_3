@@ -20,9 +20,8 @@ jobs:
         with:
           python-version: 3.8
           auto-update-conda: true
-          activate-environment: ml_fastapi  # Activate the environment after creation
-          environment-file: starter/environment.yml  # Use your existing environment.yml
-          use-fastcache: true
+          activate-environment: ml_fastapi
+          environment-file: starter/environment.yml
 
       # Step 3: Verify Conda Environment
       - name: Verify Conda Environment
@@ -31,19 +30,13 @@ jobs:
       # Step 4: Install Additional Dependencies (if needed)
       - name: Install Dependencies
         run: |
-          conda init
-          conda activate ml_fastapi
-          python -m pip install --upgrade pip
-          pip install flake8
+          conda run -n ml_fastapi python -m pip install --upgrade pip
+          conda run -n ml_fastapi pip install flake8
 
       # Step 5: Run Linter (flake8)
       - name: Run Linter (flake8)
-        run: |
-          conda activate ml_fastapi
-          flake8 . --max-line-length=127 --statistics
+        run: conda run -n ml_fastapi flake8 . --max-line-length=127 --statistics
 
       # Step 6: Run Tests (pytest)
       - name: Run Tests (pytest)
-        run: |
-          conda activate ml_fastapi
-          pytest -v
+        run: conda run -n ml_fastapi pytest -v
