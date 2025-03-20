@@ -10,11 +10,13 @@ from starter.starter.ml.model import train_model, compute_model_metrics, inferen
 logging.basicConfig(level=logging.INFO, format="%(asctime)-15s %(message)s")
 logger = logging.getLogger()
 
+
 # Add code to load in the data.
 def load_data(data_path):
     return pd.read_csv(data_path)
 
-data_path='../data/census.csv'
+
+data_path = '../data/census.csv'
 data = load_data(data_path)
 logger.info(f'Loaded data: {data_path}')
 
@@ -37,23 +39,33 @@ X_train, y_train, encoder, lb = process_data(
 )
 
 # Proces the test data with the process_data function.
-X_test, y_test, _, _ = process_data(test, categorical_features=cat_features, label='salary', training=False, encoder=encoder, lb=lb)
+X_test, y_test, _, _ = process_data(
+    test,
+    categorical_features=cat_features,
+    label='salary',
+    training=False,
+    encoder=encoder,
+    lb=lb
+)
 logger.info('Process the test data')
 
 # Train and save a model.
 model = train_model(X_train, y_train)
 logger.info('Train the model')
 
+
 def save_model(model, encoder, lb, model_path):
     joblib.dump(model, f"{model_path}/trained_model.pkl")
     joblib.dump(encoder, f"{model_path}/encoder.pkl")
     joblib.dump(lb, f"{model_path}/label_binarizer.pkl")
+
 
 save_model(model, encoder, lb, '../model')
 logger.info('Save the model')
 
 # Run Model inference
 y_preds = inference(model, X_test)
+
 
 # Compute model performance metrics
 def compute_model_metrics_per_slice(df, feature, y_true, y_preds, output_file):
@@ -76,7 +88,6 @@ def compute_model_metrics_per_slice(df, feature, y_true, y_preds, output_file):
     None (Prints performance metrics per slice)
     """
     unique_values = df[feature].unique()  # Get all unique values of the feature
-    
 
     with open(output_file, 'a') as f:
         f.write("\n")
@@ -85,7 +96,7 @@ def compute_model_metrics_per_slice(df, feature, y_true, y_preds, output_file):
             # Filter rows where the feature has a specific value
             mask = df[feature] == value
             y_true_slice = y_true[mask]
-            y_pred_slice = y_preds[mask]
+            # y_pred_slice = y_preds[mask]
 
             # Ensure we have data points for this slice
             if len(y_true_slice) == 0:
@@ -104,8 +115,6 @@ def compute_model_metrics_per_slice(df, feature, y_true, y_preds, output_file):
         f.write("\n")
 
 
-
 logger.info("Computing Model Performance On Slices of Data")
 for feature in cat_features:
     compute_model_metrics_per_slice(test, feature, y_test, y_preds, 'slice_output.txt')
-    

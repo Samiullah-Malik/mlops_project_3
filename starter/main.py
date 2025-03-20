@@ -40,13 +40,13 @@ def load_model(model_path):
 
         logger.info('Model, encoder, and label binarizer loaded successfully.')
         # logger.info(f'Encoder Categories: {encoder.categories_}')
-        
+
     except Exception as e:
         logger.error(f"Error loading model: {e}")
         model, encoder, lb = None, None, None  # Prevents crashes on startup
 
     return model, encoder, lb
-    
+
 
 model, encoder, lb = load_model(MODEL_PATH)
 
@@ -94,7 +94,7 @@ class InferenceRequest(BaseModel):
                 "native-country": "United-States"
             }
         }
-        
+
 
 # POST endpoint for model inference
 @app.post("/predict", response_model_by_alias=True)

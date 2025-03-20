@@ -1,5 +1,3 @@
-import json
-import pytest
 from fastapi.testclient import TestClient
 
 from mlops_project_3.starter.main import app  # Import FastAPI app from main.py
@@ -7,11 +5,12 @@ from mlops_project_3.starter.main import app  # Import FastAPI app from main.py
 # Create a test client
 client = TestClient(app)
 
+
 # Test Case 1: GET /
 def test_get_root():
     """Test the GET method on the root endpoint."""
     response = client.get("/")
-    
+
     # Check if the response is successful
     assert response.status_code == 200
 
@@ -23,7 +22,7 @@ def test_get_root():
 # Test Case 2: POST /predict - Low-income Prediction (<=50K)
 def test_predict_low_income():
     """Test inference for a profile expected to predict '<=50K'."""
-    
+
     payload = {
         "age": 22,
         "workclass": "Private",
@@ -42,15 +41,15 @@ def test_predict_low_income():
     }
 
     response = client.post("/predict", json=payload)
-    
+
     # Check if the response is successful
     assert response.status_code == 200
-    
+
     # Check if prediction is '<=50K'
     assert response.json()["prediction"] == "<=50K"
 
 
-# ✅ Test Case 3: POST /predict - High-income Prediction (>50K)
+# Test Case 3: POST /predict - High-income Prediction (>50K)
 def test_predict_high_income():
     """Test inference for a profile expected to predict '>50K'."""
 
@@ -72,7 +71,7 @@ def test_predict_high_income():
     }
 
     response = client.post("/predict", json=payload)
-    
+
     # Check if the response is successful
     assert response.status_code == 200
 

@@ -3,6 +3,7 @@ import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from .model import train_model, compute_model_metrics, inference
 
+
 # Set up test data
 @pytest.fixture
 def synthetic_data():
@@ -17,10 +18,12 @@ def synthetic_data():
 
     return model, X_test, y_test, y_preds
 
+
 # Test if train_model returns a trained model instance
 def test_train_model(synthetic_data):
     model, _, _, _ = synthetic_data
     assert isinstance(model, RandomForestClassifier)
+
 
 # Test if compute_model_metrics returns three float values
 def test_compute_model_metrics(synthetic_data):
@@ -30,6 +33,7 @@ def test_compute_model_metrics(synthetic_data):
     assert isinstance(precision, float)
     assert isinstance(recall, float)
     assert isinstance(fbeta, float)
+
 
 # Test if inference output is a NumPy array of expected shape
 def test_inference_output(synthetic_data):
