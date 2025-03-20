@@ -1,526 +1,521 @@
 
-Feature Value: Local-gov
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
 Feature Value: Private
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Local-gov
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: ?
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: State-gov
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Federal-gov
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Self-emp-not-inc
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: State-gov
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Self-emp-inc
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
-Feature Value: Never-worked
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+Feature Value: Federal-gov
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Without-pay
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Never-worked
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 
 
+Feature Value: HS-grad
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
 Feature Value: 11th
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Prof-school
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Some-college
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
-Feature Value: Assoc-voc
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: 1st-4th
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+Feature Value: Prof-school
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Bachelors
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: 10th
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: 12th
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Doctorate
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: HS-grad
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Assoc-acdm
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: 9th
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Preschool
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Masters
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: 5th-6th
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: 7th-8th
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: 10th
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: 9th
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: 12th
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Doctorate
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Assoc-voc
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: 1st-4th
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: 5th-6th
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Preschool
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 
 
 Feature Value: Never-married
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Married-civ-spouse
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Separated
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Widowed
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Divorced
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Married-civ-spouse
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Widowed
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Separated
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Married-spouse-absent
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Married-AF-spouse
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 
 
-Feature Value: Craft-repair
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Prof-specialty
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: ?
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Priv-house-serv
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+Feature Value: Handlers-cleaners
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Other-service
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Exec-managerial
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Adm-clerical
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Protective-serv
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Machine-op-inspct
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
-Feature Value: Handlers-cleaners
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+Feature Value: ?
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
-Feature Value: Farming-fishing
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+Feature Value: Exec-managerial
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
-Feature Value: Sales
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Tech-support
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+Feature Value: Prof-specialty
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Transport-moving
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
-Feature Value: Armed-Forces
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+Feature Value: Craft-repair
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Sales
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Farming-fishing
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Adm-clerical
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Tech-support
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Protective-serv
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Priv-house-serv
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 
 
 Feature Value: Own-child
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Husband
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Other-relative
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Not-in-family
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Wife
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Unmarried
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Not-in-family
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Husband
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Wife
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Other-relative
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 
 
 Feature Value: White
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Black
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Asian-Pac-Islander
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Amer-Indian-Eskimo
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Other
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Amer-Indian-Eskimo
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 
 
 Feature Value: Male
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Female
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 
 
 Feature Value: United-States
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: ?
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Thailand
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Italy
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Taiwan
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: China
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Guatemala
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Yugoslavia
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Dominican-Republic
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Philippines
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Puerto-Rico
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Columbia
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Mexico
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Canada
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
-Feature Value: Cuba
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+Feature Value: Philippines
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
-Feature Value: Jamaica
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Japan
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: El-Salvador
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: South
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Germany
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: India
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Scotland
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: England
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+Feature Value: Mexico
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Iran
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
-Feature Value: France
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Ecuador
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Portugal
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Peru
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Trinadad&Tobago
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Vietnam
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Hungary
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Cambodia
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Outlying-US(Guam-USVI-etc)
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Poland
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Laos
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Haiti
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Ireland
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Nicaragua
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Greece
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Honduras
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
---------------------------------------------------
-Feature Value: Holand-Netherlands
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+Feature Value: India
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 Feature Value: Hong
-  Precision: 0.7273
-  Recall:    0.6448
-  F1-score:  0.6836
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Puerto-Rico
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: England
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Portugal
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Japan
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: ?
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Jamaica
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Taiwan
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Poland
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Cuba
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Germany
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Greece
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Outlying-US(Guam-USVI-etc)
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: China
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Dominican-Republic
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Honduras
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Italy
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: South
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Vietnam
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Trinadad&Tobago
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: El-Salvador
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Peru
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Haiti
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Ireland
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Laos
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Guatemala
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Thailand
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Nicaragua
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Hungary
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Ecuador
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Yugoslavia
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Holand-Netherlands
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: France
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Scotland
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
+--------------------------------------------------
+Feature Value: Cambodia
+  Precision: 0.7383
+  Recall:    0.6077
+  F1-score:  0.6667
 --------------------------------------------------
 
