@@ -5,7 +5,7 @@ import numpy as np
 from fastapi import FastAPI
 from pydantic import BaseModel, Field
 
-from mlops_project_3.starter.starter.ml.model import inference
+from starter.starter.ml.model import inference
 
 # Initialize FastAPI app
 app = FastAPI()
