@@ -1,6 +1,5 @@
-name: ml_fastapi
+name: ml_fastapi_py39
 channels:
-  - defaults
   - conda-forge
 dependencies:
   - python=3.9
